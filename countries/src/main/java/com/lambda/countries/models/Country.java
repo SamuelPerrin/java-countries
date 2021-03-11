@@ -8,11 +8,11 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "countries")
+@Table(name= "countries")
 public class Country {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    long countryId;
+    long countryid;
 
     String name;
     long population;
@@ -32,11 +32,11 @@ public class Country {
 
     // Getters and Setters
     public long getCountryId() {
-        return countryId;
+        return countryid;
     }
 
     public void setCountryId(long countryId) {
-        this.countryId = countryId;
+        this.countryid = countryId;
     }
 
     public String getName() {
@@ -75,7 +75,7 @@ public class Country {
     @Override
     public String toString() {
         return "Country{" +
-                "countryId=" + countryId +
+                "countryId=" + countryid +
                 ", name='" + name + '\'' +
                 ", population=" + population +
                 ", landmasskm2=" + landmasskm2 +
